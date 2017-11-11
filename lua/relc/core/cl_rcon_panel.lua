@@ -108,6 +108,7 @@ function PANEL:Init()
 
 			if (not self.send:GetDisabled()) and self.send.DoClick then
 				self.send:DoClick()
+				input.HistoryPos = 0
 			end
 		else
 			input:_OnKeyCodeTyped(code)
