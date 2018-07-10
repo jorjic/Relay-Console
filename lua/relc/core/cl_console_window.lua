@@ -90,6 +90,9 @@ local PANEL = { }
 
 
 function PANEL:Init()
+	-- Ensure we use the default skin in case something overrides it
+	self:SetSkin( "Default" )
+	
 	local oldSV = self.SetVisible
 
 	self.SetVisible = function(this, b)
